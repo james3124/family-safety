@@ -1,0 +1,36 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@10.9.1
+2 info using node@v22.22.2
+3 silly config load:file:/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/public/.cache/typescript/6.0/.npmrc
+5 silly config load:file:/public/.npmrc
+6 silly config load:file:/etc/npmrc
+7 verbose title npm install types-registry@latest
+8 verbose argv "install" "--ignore-scripts" "types-registry@latest"
+9 verbose logfile logs-max:10 dir:/public/.npm/_logs/2026-06-09T10_06_06_306Z-
+10 verbose logfile /public/.npm/_logs/2026-06-09T10_06_06_306Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2027683840 maxSize:506920960 maxEntrySize:253460480
+13 silly packumentCache corgi:https://registry.npmjs.org/types-registry cache-miss
+14 http fetch GET 200 https://registry.npmjs.org/types-registry 525ms (cache miss)
+15 silly packumentCache corgi:https://registry.npmjs.org/types-registry set size:undefined disposed:false
+16 silly idealTree buildDeps
+17 silly fetch manifest types-registry@0.1.773
+18 silly packumentCache full:https://registry.npmjs.org/types-registry cache-miss
+19 http fetch GET 200 https://registry.npmjs.org/types-registry 193ms (cache miss)
+20 silly packumentCache full:https://registry.npmjs.org/types-registry set size:undefined disposed:false
+21 silly placeDep ROOT types-registry@0.1.773 OK for:  want: 0.1.773
+22 silly reify moves {}
+23 silly audit bulk request { 'types-registry': [ '0.1.773' ] }
+24 http cache types-registry@https://registry.npmjs.org/types-registry/-/types-registry-0.1.773.tgz 2ms (cache hit)
+25 silly tarball no local data for types-registry@https://registry.npmjs.org/types-registry/-/types-registry-0.1.773.tgz. Extracting by manifest.
+26 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 241ms
+27 silly audit report {}
+28 http fetch GET 200 https://registry.npmjs.org/types-registry/-/types-registry-0.1.773.tgz 875ms (cache miss)
+29 silly ADD node_modules/types-registry
+30 verbose cwd /public/.cache/typescript/6.0
+31 verbose os Linux 5.4.210-android12-9-667269-g856cdf2f247e-ab665
+32 verbose node v22.22.2
+33 verbose npm  v10.9.1
+34 verbose exit 0
+35 info ok
