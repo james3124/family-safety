@@ -63,6 +63,23 @@ void main() {
   });
 
   group('Geofence', () {
+    test('fromMap and toMap roundtrip', () {
+      final map = {
+        'familyId': 'f1',
+        'name': 'Home',
+        'lat': 37.7749,
+        'lng': -122.4194,
+        'radius': 100,
+        'triggerOnEnter': true,
+        'triggerOnExit': true,
+      };
+      final fence = Geofence.fromMap(map, 'g1');
+      expect(fence.id, 'g1');
+      expect(fence.name, 'Home');
+      expect(fence.lat, 37.7749);
+      expect(fence.radiusMeters, 100);
+    });
+
     test('containsPoint returns true when point is within radius', () {
       final fence = Geofence(
         id: 'g1', familyId: 'f1', name: 'Home',

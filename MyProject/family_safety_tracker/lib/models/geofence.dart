@@ -16,6 +16,19 @@ class Geofence {
     required this.triggerOnEnter, required this.triggerOnExit,
   });
 
+  factory Geofence.fromMap(Map<String, dynamic> map, String id) {
+    return Geofence(
+      id: id,
+      familyId: map['familyId'] as String,
+      name: map['name'] as String,
+      lat: map['lat'] as double,
+      lng: map['lng'] as double,
+      radiusMeters: map['radius'] as double,
+      triggerOnEnter: map['triggerOnEnter'] as bool,
+      triggerOnExit: map['triggerOnExit'] as bool,
+    );
+  }
+
   bool containsPoint(LocationPoint point) {
     const earthRadius = 6371000;
     final dLat = _toRadians(point.lat - lat);
